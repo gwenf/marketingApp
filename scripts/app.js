@@ -1,7 +1,8 @@
 angular.module('app',['ngAnimate',
                       'ui.router',
                       'color.picker',
-                      'app.directives.customerCards'])
+                      'app.directives.customerCards',
+                      'ngModal'])
   .config(['$stateProvider','$urlRouterProvider', function ($stateProvider,$urlRouterProvider){
 
     $urlRouterProvider.otherwise('/');

@@ -8,6 +8,7 @@
     <input type="checkbox" id="existing" ng-click='showExisting=!showExisting'>
       Existing</label>
   </div>
+  <button ng-click='modalShown=!modalShown' class='button bottom-button'>Show Selected</button>
 </aside>
 
 <div class="main-content">
@@ -18,3 +19,7 @@
     <client-card></client-card>
   </div>
 </div>
+
+<modal-dialog show='modalShown' dialog-title='My Dialog' height='400px' width='75%'>
+  <p>Dialog content goes in here</p>
+</modal-dialog>

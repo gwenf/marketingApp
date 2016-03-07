@@ -19,6 +19,7 @@
     "angular-ui-router": "^0.2.18",
     "jquery": "^2.2.1",
     "angular-minicolors": "^0.0.7",
-    "angular-color-picker": "angularjs-color-picker#^1.0.2"
+    "angular-color-picker": "angularjs-color-picker#^1.0.2",
+    "ngModal": "^1.2.2"
   }
 }
