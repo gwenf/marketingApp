@@ -1,0 +1,21 @@
+<form ng-submit='people.push(newPerson); newPerson={}' class='person-form'>
+  <input type="text" ng-model='newPerson.firstname' placeholder="First Name">
+  <input type="text" ng-model='newPerson.lastname' placeholder="Last Name">
+  <label>Favorite Color:
+    <color-picker ng-model="newPerson.myColor" color-picker-format="'hex'"
+      color-picker-swatch-only="true"></color-picker>
+  </label>
+  <div class='delete button' ng-click='newPerson={}'>Delete</div>
+  <!-- <input type="submit" class="button" value="Save"> -->
+  <button class='button' type="submit">Save</button>
+</form>
+<ul class='people-list' ng-init='people=[]'>
+  <li ng-repeat='person in people' class='person'>
+    <p><span class='title'>Firstname: </span>{{person.firstname}}</p>
+    <p><span class='title'>Lastname: </span>{{person.lastname}}</p>
+    <p><span class='title'>Favorite Color:</span></p>
+    <div class='chosen-color' style='background:{{person.myColor}}'></div>
+    <a href='javascript:void(0)' ng-click='people.splice($index, 1);'>
+      <button class='button delete'>Delete</button></a>
+  </li>
+</ul>

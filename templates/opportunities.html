@@ -1,0 +1,20 @@
+<aside class='sidebar'>
+  <div class='center-div'>
+    <h1>Status:</h1>
+    <label for='new'>
+    <input type="checkbox" id="new" ng-click='showOpportunities=!showOpportunities'>
+      New</label>
+    <label for='existing'>
+    <input type="checkbox" id="existing" ng-click='showExisting=!showExisting'>
+      Existing</label>
+  </div>
+</aside>
+
+<div class="main-content">
+  <div class'new-card' ng-if='showOpportunities'>
+    <prospect-card></prospect-card>
+  </div>
+  <div class='existing-card' ng-if='showExisting'>
+    <client-card></client-card>
+  </div>
+</div>

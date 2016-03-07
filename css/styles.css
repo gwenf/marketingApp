@@ -1,0 +1,128 @@
+body {
+  margin: none;
+  font-family: sans-serif;
+  font-weight: 300; }
+
+nav {
+  height: 50px;
+  width: 100%;
+  font-size: 1.2em;
+  border-bottom: 1px solid black; }
+  nav a {
+    color: black;
+    text-decoration: none; }
+    nav a:hover {
+      text-decoration: underline; }
+  nav ul {
+    list-style: none;
+    line-height: 30px; }
+    nav ul li {
+      display: inline;
+      float: left;
+      padding: 0 20px; }
+    nav ul li:first-child {
+      padding-left: none;
+      border-right: 1px solid black; }
+
+.sidebar {
+  width: 120px;
+  position: fixed;
+  height: 100%;
+  border-right: 1px solid black; }
+  @media (max-width: 500px) {
+    .sidebar {
+      position: relative;
+      top: -60px;
+      width: 100%;
+      height: 100px; } }
+  .sidebar .center-div {
+    width: 80px;
+    margin: 5% auto;
+    padding: 20% 10% 100% 0; }
+
+.main-content {
+  position: absolute;
+  top: 100px;
+  left: 150px; }
+  @media (max-width: 500px) {
+    .main-content {
+      top: 250px;
+      left: 0; } }
+
+label {
+  display: block; }
+
+.card {
+  float: left;
+  margin: 5%; }
+
+.client-card {
+  float: left;
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  border: 2px solid #EBAD4B; }
+  @media (max-width: 500px) {
+    .client-card {
+      float: none;
+      display: block;
+      margin: 2% auto; } }
+  .client-card a {
+    text-decoration: none; }
+  .client-card img {
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: auto;
+    max-width: 300px; }
+
+.person-form {
+  margin: 4%;
+  width: 225px;
+  float: left;
+  border: 1px solid black;
+  padding: 2%; }
+  .person-form input[type='text'] {
+    display: block;
+    margin: 5px;
+    font-size: 1.2em; }
+  .person-form input[type='submit'] {
+    font-size: 5em;
+    padding: 2%; }
+    .person-form input[type='submit']:hover {
+      cursor: pointer; }
+
+.chosen-color {
+  height: 100px;
+  width: 100px;
+  margin: 2px auto; }
+
+.people-list {
+  list-style: none; }
+  .people-list .person {
+    border: 2px solid #008CBA;
+    width: 200px;
+    height: 300px;
+    float: left;
+    text-align: center;
+    margin: 20px; }
+  .people-list .title {
+    font-weight: 400;
+    font-size: 1.3em; }
+
+.button {
+  font-size: 1.5em;
+  background-color: #008CBA;
+  border: 2px solid #006687;
+  color: white;
+  padding: 2%;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5% 1%; }
+
+.delete {
+  background-color: #f44336;
+  border: 2px solid #ea1c0d; }
+
+/*# sourceMappingURL=styles.css.map */

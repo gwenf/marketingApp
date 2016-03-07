@@ -1,0 +1,47 @@
+.person-form
+  margin: 4%
+  width: 225px
+  float: left
+  border: 1px solid black
+  padding: 2%
+  input[type='text']
+    display: block
+    margin: 5px
+    font-size: 1.2em
+  input[type='submit']
+    font-size: 5em
+    padding: 2%
+    &:hover
+      cursor: pointer
+
+.chosen-color
+  height: 100px
+  width: 100px
+  margin: 2px auto
+
+.people-list
+  list-style: none
+  .person
+    border: 2px solid $blue
+    width: 200px
+    height: 300px
+    float: left
+    text-align: center
+    margin: 20px
+  .title
+    font-weight: 400
+    font-size: 1.3em
+
+.button
+  font-size: 1.5em
+  background-color: $blue
+  border: 2px solid darken($blue, 10%)
+  color: white
+  padding: 2%
+  text-align: center
+  display: inline-block
+  cursor: pointer
+  margin: 5% 1%
+.delete
+  background-color: $red
+  border: 2px solid darken($red, 10%)

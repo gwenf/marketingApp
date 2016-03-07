@@ -1,0 +1,48 @@
+.sidebar
+  width: 120px
+  position: fixed
+  height: 100%
+  border-right: 1px solid black
+  @media (max-width: 500px)
+    position: relative
+    top: -60px
+    width: 100%
+    height: 100px
+  .center-div
+    width: 80px
+    margin: 5% auto
+    padding: 20% 10% 100% 0
+
+.main-content
+  position: absolute
+  top: 100px
+  left: 150px
+  @media (max-width: 500px)
+    top: 250px
+    left: 0
+
+label
+  display: block
+
+.card
+  float: left
+  margin: 5%
+
+.client-card
+  float: left
+  margin: 2%
+  padding: 2%
+  text-align: center
+  border: 2px solid $orange
+  @media (max-width: 500px)
+    float: none
+    display: block
+    margin: 2% auto
+  a
+    text-decoration: none
+  img
+    display: block
+    margin: auto
+    height: 150px
+    width: auto
+    max-width: 300px
